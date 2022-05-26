@@ -1,0 +1,17 @@
+.slider {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.slider video {
+    width: 100%;
+    border: none;
+    margin-bottom: -3px;
+}
+
+.navbar-second {
+    position: absolute;
+    top: 100%;
+    object-position: top;
+}

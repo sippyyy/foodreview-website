@@ -1,0 +1,30 @@
+
+.main {
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: bottom;
+    background-attachment: fixed ;
+    background-image: url('https://images.pexels.com/photos/2377477/pexels-photo-2377477.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1')
+ }
+.navbar__menu-button {
+    font-size: 2.5rem;
+    position: absolute;
+    display: none;
+    padding: 5px 10px 5px;
+    background-color: var(--background-color);
+    border-radius: 40px;
+    z-index: 1;
+    position: fixed;
+}
+
+.navbar__menu-button i {
+    color: white;
+    opacity: 0.7;
+}
+
+@media (max-width: 600px){
+    .navbar__menu-button{
+        display: block;
+    }
+
+}

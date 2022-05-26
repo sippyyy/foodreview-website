@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.1-web/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/header_navbar.css">
+    <link rel="stylesheet" href="./assets/css/slider.css">
+    <link rel="stylesheet" href="./assets/css/animation.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/css_rec/form.css">
+    <link rel="stylesheet" href="./assets/css/css_rec/main-rec.css">
+    <link rel="stylesheet" href="./assets/css/css_rec/rec.css">
+    <title>Recommendations</title>
+</head>
+<body>
+    <div class="main-rec">
+        <style>
+            .main-rec {
+                background-image: url(./assets/img/pexels-lisa-fotios-1279330.jpg)
+            }
+        </style>
+        <div class="navbar__menu-button">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+        <div class="navbar">
+            <div class="close-navbar-btn">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <ul class="navbar__list grid wide">
+                <li class="navbar__list-items">
+                    <a href="./index.html" class="navbar__list-items-name navbar__list-items-name--active">Home</a>
+                </li>
+                <li class="navbar__list-items">
+                    <a href="./index2.html" class="navbar__list-items-name">
+                        Recommendation
+                        <i class="navbar__list-items-icon fa-solid fa-angle-down"></i>
+                    </a>
+                    <ul class="subnav">
+                        <li class="subnav__items">
+                            <a href="#breakfast" class="subnav__items-name">Breakfast</a>
+                        </li>
+                        <li class="subnav__items">
+                            <a href="#lunch" class="subnav__items-name">Lunch</a>
+                        </li>
+                        <li class="subnav__items">
+                            <a href="#dinner" class="subnav__items-name">Dinner</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="navbar__list-items">
+                    <a href="#" class="navbar__list-items-name">Contact</a>
+                </li>
+                <li class="navbar__list-items">
+                    <a href="#" class="navbar__list-items-name">News</a>
+                </li>
+            </ul>
+        </div>
+        <div class="form grid wide">
+            <form method="POST" id="form-1" class="form row">
+                <div class="form-header">
+                    <h2>Give us a Recommendation</h2>
+                </div>
+                <div class="form-group col l-12 c-12 m-12">
+                    <input class="form--decor" type="text" name="full-name" id="name" placeholder="Please enter your name">
+                    <span class="form-message-error"></span>
+                </div>
+                <div class="form-group col l-6 c-6 m-6">
+                    <input class="form--decor" type="date" name="date"id="date" placeholder="Date Of Birth">
+                    <span class="form-message-error"></span>
+                </div>
+                <div class="form-group col l-6 c-6 m-6">
+                    <input class="form--decor" type="text" name="email" id="email" placeholder="Email Address">
+                    <span class="form-message-error"></span>
+                </div>
+                <div class="form-group col l-6 c-6 m-6">
+                    <input class="form--decor" type="text" name="location" id="location" placeholder="Location">
+                    <span class="form-message-error"></span>
+                </div>
+                <div class="form-group col l-6 c-6 m-6">
+                    <div class="form-vote-level">
+                            <input type="radio" name="rate" id="rate-5">
+                            <label for="rate-5" class="fa-solid fa-star"></label>
+                            <input type="radio" name="rate" id="rate-4">
+                            <label for="rate-4" class="fa-solid fa-star"></label>
+                            <input type="radio" name="rate" id="rate-3">
+                            <label for="rate-3" class="fa-solid fa-star"></label>
+                            <input type="radio" name="rate" id="rate-2">
+                            <label for="rate-2" class="fa-solid fa-star"></label>
+                            <input type="radio" name="rate" id="rate-1">
+                            <label for="rate-1" class="fa-solid fa-star"></label>
+                    </div>
+                    <span class="form-message-error"></span>
+                </div>
+                <div class="form-group col l-12 c-12 m-12">
+                    <input class="form--decor" type="text" placeholder="Write a description" name="description" id="desc">
+                    <span class="form-message-error"></span>
+                </div>
+                <div class="form-submit-btn col l-12 c-12 m-12">
+                    <div class="form-submit--position">
+                        <input type="submit">
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        <div class="reccomendations__block">
+            <h3 id="breakfast" class="reccomendations-topic grid wide">
+                Breakfast
+            </h3>
+        </div>
+        <div class="reccomendations grid wide">
+            <div id="breakfast-block" class="reccomendations-article row">
+            </div>
+        </div>
+
+        <!-- //Lunch> -->
+
+        <div class="reccomendations__block">
+            <h3 id="lunch" class="reccomendations-topic grid wide">
+                Lunch
+            </h3>
+        </div>
+        <div class="reccomendations grid wide">
+            <div id="lunch-block" class="reccomendations-article row">            
+            </div>
+        </div>
+
+        <!-- //Dinner -->
+
+
+        <div class="reccomendations__block">
+            <h3 id ="dinner" class="reccomendations-topic grid wide">
+                Dinner
+            </h3>
+        </div>
+        <div class="reccomendations grid wide">
+            <div id="dinner-block" class="reccomendations-article row">             
+            </div>
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script>
+        validator({
+            form: '#form-1',
+            formGroupSelector: '.form-group',
+            errorSelector: '.form-message-error',
+            rules: [
+                validator.isRequired('#name'),
+                validator.isRequired('#date'),
+                validator.isRequired('#email'),
+                validator.isEmail('#email'),
+                validator.isRequired('#location'),
+                validator.isRequired('#desc')
+            ],
+            onSubmit: function(data){
+                console.log(data)
+            }
+        })
+        const breakfastBlock = $('#breakfast-block')
+const lunchBlock = $('#lunch-block')
+const dinnerBlock = $('#dinner-block')
+
+const news ={
+    articlesBreakfast: [
+        {
+            topic: 'Quán Ăn Đại Nam',
+            img: 'https://media-cdn.tripadvisor.com/media/photo-s/18/03/12/e0/interior.jpg',
+            desc: 'Phở gà ngon. . . Chính xác những gì tôi đang tìm kiếm. Dịch vụ tốt và nhân viên thân thiện. . . nằm ngoài hồ ở Queenstown',
+        },
+        {
+            topic: 'Kingdom Vietnamese',
+            img: 'https://media-cdn.tripadvisor.com/media/photo-s/19/c5/c1/44/vietnamese-restaurants.jpg',
+            desc: 'Phở gà ngon. . . Chính xác những gì tôi đang tìm kiếm. Dịch vụ tốt và nhân viên thân thiện. . . nằm ngoài hồ ở Queenstown',
+        },
+        {
+            topic: 'Kingdom Vietnamese',
+            img: 'https://www.gannett-cdn.com/presto/2019/03/19/PGRF/29d6565d-4325-4d82-a53a-5299eed6db1d-IMG_2696.jpg?width=660&height=495&fit=crop&format=pjpg&auto=webp',
+            desc: 'Phở gà ngon. . . Chính xác những gì tôi đang tìm kiếm. Dịch vụ tốt và nhân viên thân thiện. . . nằm ngoài hồ ở Queenstown',
+        },
+    ],
+    renderBreakFast: function(){
+        const html = news.articlesBreakfast.map(function(article,index){
+            return `
+            <div class="reccomendations__content l-4 m-4 c-4">
+                    <div class="reccomendations__thumb">
+                        <img class="reccomendations-img" src="${article.img}" alt="">
+                    </div>
+                    <div class="reccomendations__container">
+                        <a class="reccomendations-heading-link" href="#">
+                            <h3 class="reccomendations-heading">
+                                ${article.topic}
+                            </h3>
+
+                        </a> 
+                        <span class="reccomendations-desc">
+                            ${article.desc}
+                        </span>
+                        <a href="#" class="reccomendations-link">Learn more>>></a>
+                    </div>
+                </div>  
+            `
+        })
+        breakfastBlock .innerHTML = html.join('')
+    },
+    articlesLunch: [
+        {
+            topic: 'Quán Ăn Đại Nam',
+            img: 'https://media-cdn.tripadvisor.com/media/photo-s/18/03/12/e0/interior.jpg',
+            desc: 'Phở gà ngon. . . Chính xác những gì tôi đang tìm kiếm. Dịch vụ tốt và nhân viên thân thiện. . . nằm ngoài hồ ở Queenstown',
+        },
+        {
+            topic: 'Kingdom Vietnamese',
+            img: 'https://media-cdn.tripadvisor.com/media/photo-s/19/c5/c1/44/vietnamese-restaurants.jpg',
+            desc: 'Phở gà ngon. . . Chính xác những gì tôi đang tìm kiếm. Dịch vụ tốt và nhân viên thân thiện. . . nằm ngoài hồ ở Queenstown',
+        },
+        {
+            topic: 'Kingdom Vietnamese',
+            img: 'https://www.gannett-cdn.com/presto/2019/03/19/PGRF/29d6565d-4325-4d82-a53a-5299eed6db1d-IMG_2696.jpg?width=660&height=495&fit=crop&format=pjpg&auto=webp',
+            desc: 'Phở gà ngon. . . Chính xác những gì tôi đang tìm kiếm. Dịch vụ tốt và nhân viên thân thiện. . . nằm ngoài hồ ở Queenstown',
+        },
+    ],
+    renderLunch: function(){
+        const html = news.articlesLunch.map(function(article,index){
+            return `
+            <div class="reccomendations__content l-4 m-4 c-4">
+                <div class="reccomendations__thumb">
+                    <img class="reccomendations-img" src="${article.img}" alt="">
+                </div>
+                <div class="reccomendations__container">
+                    <a class="reccomendations-heading-link" href="#">
+                        <h3 class="reccomendations-heading">
+                            ${article.topic}
+                        </h3>
+
+                    </a> 
+                    <span class="reccomendations-desc">
+                        ${article.desc}
+                    </span>
+                    <a href="#" class="reccomendations-link">Learn more>>></a>
+                </div>
+            </div>  
+            `
+        })
+        lunchBlock.innerHTML=html.join('')
+    },
+    articlesDinner: [
+        {
+            topic: 'Quán Ăn Đại Nam',
+            img: 'https://media-cdn.tripadvisor.com/media/photo-s/18/03/12/e0/interior.jpg',
+            desc: 'Phở gà ngon. . . Chính xác những gì tôi đang tìm kiếm. Dịch vụ tốt và nhân viên thân thiện. . . nằm ngoài hồ ở Queenstown',
+        },
+        {
+            topic: 'Kingdom Vietnamese',
+            img: 'https://media-cdn.tripadvisor.com/media/photo-s/19/c5/c1/44/vietnamese-restaurants.jpg',
+            desc: 'Phở gà ngon. . . Chính xác những gì tôi đang tìm kiếm. Dịch vụ tốt và nhân viên thân thiện. . . nằm ngoài hồ ở Queenstown',
+        },
+        {
+            topic: 'Kingdom Vietnamese',
+            img: 'https://www.gannett-cdn.com/presto/2019/03/19/PGRF/29d6565d-4325-4d82-a53a-5299eed6db1d-IMG_2696.jpg?width=660&height=495&fit=crop&format=pjpg&auto=webp',
+            desc: 'Phở gà ngon. . . Chính xác những gì tôi đang tìm kiếm. Dịch vụ tốt và nhân viên thân thiện. . . nằm ngoài hồ ở Queenstown',
+        },
+    ],
+    renderDinner: function(){
+        const html = news.articlesDinner.map(function(article,index){
+            return `
+            <div class="reccomendations__content l-4 m-4 c-4">
+                <div class="reccomendations__thumb">
+                    <img class="reccomendations-img" src="${article.img}" alt="">
+                </div>
+                <div class="reccomendations__container">
+                    <a class="reccomendations-heading-link" href="#">
+                        <h3 class="reccomendations-heading">
+                            ${article.topic}
+                        </h3>
+
+                    </a> 
+                    <span class="reccomendations-desc">
+                        ${article.desc}
+                    </span>
+                    <a href="#" class="reccomendations-link">Learn more>>></a>
+                </div>
+            </div>  
+            `
+        })
+        dinnerBlock.innerHTML=html.join('')
+    },
+    articlesDinner: [
+        {
+            topic: 'Quán Ăn Đại Nam',
+            img: 'https://media-cdn.tripadvisor.com/media/photo-s/18/03/12/e0/interior.jpg',
+            desc: 'Phở gà ngon. . . Chính xác những gì tôi đang tìm kiếm. Dịch vụ tốt và nhân viên thân thiện. . . nằm ngoài hồ ở Queenstown',
+        },
+        {
+            topic: 'Kingdom Vietnamese',
+            img: 'https://media-cdn.tripadvisor.com/media/photo-s/19/c5/c1/44/vietnamese-restaurants.jpg',
+            desc: 'Phở gà ngon. . . Chính xác những gì tôi đang tìm kiếm. Dịch vụ tốt và nhân viên thân thiện. . . nằm ngoài hồ ở Queenstown',
+        },
+        {
+            topic: 'Kingdom Vietnamese',
+            img: 'https://www.gannett-cdn.com/presto/2019/03/19/PGRF/29d6565d-4325-4d82-a53a-5299eed6db1d-IMG_2696.jpg?width=660&height=495&fit=crop&format=pjpg&auto=webp',
+            desc: 'Phở gà ngon. . . Chính xác những gì tôi đang tìm kiếm. Dịch vụ tốt và nhân viên thân thiện. . . nằm ngoài hồ ở Queenstown',
+        },
+    ],
+    start: function(){
+        this.renderBreakFast()
+        this.renderLunch()
+        this.renderDinner()
+
+    }
+}
+news.start()
+    </script>
+</body>
+</html>

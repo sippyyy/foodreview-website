@@ -1,0 +1,72 @@
+@keyframes zoomInText {
+    from{
+        font-size: 1.4rem;
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        font-size: 2rem;
+    }
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0.2;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes zoomInTextMobile {
+    from{
+        font-size: 1rem;
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        font-size: 1.3rem;
+    }
+}
+
+@keyframes TwistCard {
+    from {
+        transform: translateY(0) rotate(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateY(-80%) rotate(20deg);
+        opacity: 0.5;
+    }
+}
+
+@keyframes slideDown {
+    from {
+        transform: translateY(-200%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform : translateX(-100%) 
+    }
+    to {
+        transform: translateX(0)
+    }
+}
+
+@keyframes textUp {
+    from {
+        transform: translateY(0);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(-20px);
+        opacity: 1;
+    }
+}

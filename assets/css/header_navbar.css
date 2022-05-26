@@ -1,0 +1,151 @@
+.navbar {
+    min-height: 67px;
+    position: fixed;
+    background-color: var(--background-color);
+    left: 0;
+    right: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    border-bottom-left-radius: var(--main-border-radius);
+    border-bottom-right-radius: var(--main-border-radius);
+    z-index: 1;
+}
+
+.close-navbar-btn {
+    z-index: 1;
+    padding: 20px;
+    color: white;
+    display: none;
+}
+.close-navbar-btn i{
+    
+    font-size: 2rem;;
+}
+
+.navbar__list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+.navbar__list-items {
+    max-height: 67px;
+    position: relative;
+}
+
+.navbar__list-items:hover .subnav {
+    display: block;
+    animation: slideDown ease-in 0.4s;
+    animation-fill-mode: forwards;
+}
+
+.navbar__list-items-name {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 67px;
+    display: block;
+    
+}
+
+.navbar__list-items-name--active {
+    color:rgb(223, 162, 77);
+    font-weight: 900;
+}
+
+
+.navbar__list-items-name:hover {
+    color:rgb(223, 162, 77);
+}
+
+.navbar__list-items-icon {
+    margin-left: 3px;
+    font-size: 1.3rem;
+}
+
+.subnav {
+    list-style: none;
+    background-color: var(--background-color);
+    position: absolute;
+    top: 104%;
+    min-width: 150px;
+    border-radius: 10px;
+    display: none;
+}
+
+.subnav__items-name {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    display: block;
+    font-size: 1.4rem;
+    position: relative;
+}
+
+.subnav__items-name::after {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.6);
+    width: 100px;
+    height: 1px;
+    top: -1px;
+    left: 26px;
+}
+
+.subnav__items:first-child .subnav__items-name::after {
+    display: none;
+}
+
+
+.subnav__items-name:hover {
+    color: var(--text-nav);
+    background-color: var(--background-hover);
+    border-radius: 10px;
+}
+
+@media (max-width: 600px){
+    .navbar {
+        position: fixed;
+        top: 0;
+        bottom:0;
+        left: 0;
+        width: 170px;
+        background-color: #000;
+        display: none;
+        border-radius:0;
+        }
+    .menu-navbar-active {
+        animation: slideOut ease 0.4s;
+        display: block;
+    }
+    .navbar__list {
+        flex-direction: column;
+        position: absolute;
+        top: 20px;
+        left: 10px;
+    }
+    .subnav{
+        background-color: #000;
+        left: 160px;
+        top: 20px;
+        border-top-left-radius:0px; 
+        border-bottom-left-radius:0px; 
+    }
+
+    .subnav__items-name {
+        line-height: 3rem;
+    }
+    .navbar__list-items:hover .subnav {
+        display: block;
+        animation: fadeIn ease-in 0.4s;
+        animation-fill-mode: forwards;
+    }
+
+    .close-navbar-btn {
+        display: block;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+    }
+}

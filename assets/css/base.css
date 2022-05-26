@@ -1,0 +1,24 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Kodchasan', sans-serif;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+:root {
+    --background-color: rgba(0,0,0,0.5);
+    --text-nav: rgb(223, 162, 77);
+    --background-hover: rgba(177, 174, 174, 0.5);
+    --border-separate: rgba(235, 228, 228, 0.7);
+    --main-border-radius: 20px;
+}
+
+.row-reverse {
+    display: flex;
+    flex-direction: row-reverse;
+}

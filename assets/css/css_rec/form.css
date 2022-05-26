@@ -1,0 +1,94 @@
+.form {
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+form{
+    padding: 40px 20px;
+    background-color: var(--background-color);
+    border-radius: var(--main-border-radius);
+}
+.form-header {
+    padding: 20px;
+    flex: 1;
+    align-items: center;
+    text-align: center;
+    font-size: 1.7rem;
+    color: #fff;
+}
+.form-group {
+    padding-top: 10px;
+}
+
+.form--decor  {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border-color: rgba(0, 0, 0, 0.4);
+    outline: none;
+}
+
+.form-group.invalid .form--decor  {
+    border: 4px solid var(--text-nav)
+}
+.form-dob {
+
+}
+
+.form-location {
+
+}
+.form-vote {
+}
+
+.form-vote-level {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.form-vote-level input {
+    display: none;
+}
+
+.form-vote-level label {
+    font-size: 2.5rem;
+    color: rgba(255, 255, 255, 0.5);
+    transition: all 0.2 ease;
+}
+
+.form-vote-level input:not(checked) ~ label:hover,
+.form-vote-level input:not(checked) ~ label:hover ~ label,
+.form-vote-level input:checked ~ label {
+    color: yellow
+}
+
+.form-email {
+
+}
+.form-submit-btn  {
+    padding: 10px 20px;
+}
+
+.form-submit--position{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.form-submit--position input {
+    padding: 10px 30px;
+    border: none;
+    border-radius: 5px;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+}
+
+.form-message-error{
+    color: var(--text-nav);
+    font-size: 1.2rem;
+    font-weight: 600;
+    font-style: italic;
+}
